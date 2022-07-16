@@ -7,3 +7,9 @@ print("------------------------------------")
 print(ans)
 print("------------------------------------")
 print(unans)
+
+# from scapy.all import *
+# from scapy.layers.inet import TCP, IP, Ether, ICMP
+# from scapy.layers.l2 import ARP
+# packet = sniff(count=1)
+# print(packet[0].show())
