@@ -1,7 +1,6 @@
 # Importing all the sub liberies from scapy.all
 from socket import timeout
 from sys import flags
-from tkinter import E
 from scapy.all import *
 from scapy.layers.inet import TCP, IP, Ether, ICMP
 from scapy.layers.l2 import ARP
@@ -71,5 +70,5 @@ def BruteForce(port):
             SSHconn.close()
             break
         except Exception:
-            print(f"The {password} failed!")
+            print(f"The password {password} failed!")
 main()
