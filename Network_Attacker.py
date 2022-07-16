@@ -1,4 +1,3 @@
-from sys import flags
 from scapy.all import *
 from scapy.layers.inet import TCP, IP, Ether, ICMP
 from scapy.layers.l2 import ARP
