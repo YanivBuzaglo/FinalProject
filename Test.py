@@ -46,4 +46,19 @@ if pass_strength == True:
     print("Password is strong!")
 else:
     print("Password is weak!")
-4%0
+
+# from scapy.all import *
+# from scapy.layers.inet import TCP, IP, Ether, ICMP
+# from scapy.layers.l2 import ARP
+# packet1 = (IP(dst="192.168.1.49")/TCP(dport=80, flags="S"))
+# ans, unans = sr(packet1)
+# print("------------------------------------")
+# print(ans)
+# print("------------------------------------")
+# print(unans)
+
+# from scapy.all import *
+# from scapy.layers.inet import TCP, IP, Ether, ICMP
+# from scapy.layers.l2 import ARP
+# packet = sniff(count=1)
+# print(packet[0].show())
