@@ -1,6 +1,7 @@
 # Importing all the sub liberies from scapy.all
 from socket import timeout
 from sys import flags
+from tkinter import E
 from scapy.all import *
 from scapy.layers.inet import TCP, IP, Ether, ICMP
 from scapy.layers.l2 import ARP
@@ -15,7 +16,6 @@ Registered_Ports = range(1,1025)
 Open_Ports = []
 
 # Creating scan port function with single argument followed by the name port
-port = 22 
 def ScanPort(port):
     src_port = RandShort()
     conf.verb = 0
@@ -29,4 +29,11 @@ def ScanPort(port):
             return False
     else:
         return False
-print(ScanPort(port))
+# Creating availability check fuction on the target address
+def target_availability():
+    try:
+        conf.verb = 0
+        Send_Ping = sr1(IP(dst=target)/ICMP(),timeout=3)
+    except Exception as e:
+        print(e)
+    return False
