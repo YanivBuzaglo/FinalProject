@@ -11,4 +11,6 @@
 
 5. Configure the PasswordList.txt as you wish, the code will allways use is for dictionary of passwords for the brute force.
 
-6. ==== HAPPY PRACTICE! ==== 
+6. YOU'LL NEED ALL FILES IN THIS REPO IN ORDER TO RUN THIS SCRIPT!
+
+7. ==== HAPPY PRACTICE! ==== 
