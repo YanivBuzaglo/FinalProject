@@ -51,7 +51,7 @@ def main():
         if 22 in Open_Ports:
             port = 22
             brt_frc = input("The scan discovered that port 22 is open would you like to preform brute force on that port? yes/no ==> ")
-            if brt_frc == "yes" or brt_frc == "Yes" or brt_frc == "y" or brt_frc == "y":
+            if brt_frc == "yes" or brt_frc == "Yes" or brt_frc == "y" or brt_frc == "Y":
                 BruteForce(port)
             else:
                 print("BYE!")
